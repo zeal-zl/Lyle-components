@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" @click="alertmsg">
+  <button class="btn" @click="alertMsg">
     <slot name="icon"></slot>
     <span>{{msg}}</span>
   </button>
@@ -11,15 +11,14 @@
       msg: {
         defaultName: '下载'
       }
-
     },
     data () {
       return {}
     },
     methods: {
-      alertmsg () {
-        alert(this.msg)
-        this.$emit('msgalert', this.msg)
+      alertMsg () {
+        this.$emit('msgAlert', this.msg)
+        this.$emit('btnClickEvent', name, this.msg)
       }
     }
   }

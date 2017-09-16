@@ -24,10 +24,7 @@
   }
 </script>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
+
 
   .Lyle ul {
     width: 65%;
